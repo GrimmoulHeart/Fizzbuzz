@@ -1,6 +1,7 @@
 name: Areegator_loadtest
+
 on: push
-    branches: [ master ]
+    #branches: [ master ]
      workflow_dispatch: 
 
 jobs:
