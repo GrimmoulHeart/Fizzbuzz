@@ -25,7 +25,7 @@ jobs:
           outputReportsFolder: test_report/
 
       - name: Upload JMeter Test Results
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v3
         with:
          name: test_results
          path: test_report
