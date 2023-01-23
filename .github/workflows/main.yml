@@ -21,7 +21,8 @@ jobs:
       - name: Run JMeter Tests
         uses: actions/checkout@v2
         with:
-          test-plan-path: $GITHUB_WORKSPACE/loadtest.jmx
+          testFilePath: $GITHUB_WORKSPACE/loadtest.jmx
+          outputReportsFolder: test_report/
 
       - name: Upload JMeter Test Results
         uses: actions/upload-artifact@v2.2.4
