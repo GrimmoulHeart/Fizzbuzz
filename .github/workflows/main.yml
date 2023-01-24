@@ -16,7 +16,7 @@ jobs:
            ls
       - name: create test_report
         run: |
-           mkdir test_report/
+           mkdir $GITHUB_WORKSPACE/test_report/
 
       - name: Run JMeter Tests
         uses: actions/checkout@v3
