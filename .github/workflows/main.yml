@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run JMeter Tests
-        uses: actions/run-jmeter-github-action@v0.0.4
+        uses: rbhadti94/apache-jmeter-action@v0.6.0
         with:
           testFilePath: $GITHUB_WORKSPACE/loadtest.jmx
           outputReportsFolder: test_report/
