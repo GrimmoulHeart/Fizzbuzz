@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: GrimmoulHeart/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Run JMeter Tests
-        uses: GrimmoulHeart/run-jmeter-github-action@v0.0.4
+        uses: actions/run-jmeter-github-action@v0.0.4
         with:
           testFilePath: $GITHUB_WORKSPACE/loadtest.jmx
           outputReportsFolder: test_report/
